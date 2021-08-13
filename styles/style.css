@@ -46,6 +46,12 @@ ul {
 	list-style: none;
 }
 
+input:focus {
+	outline-color: #4d86cc;
+	outline-style: solid;
+	outline-width: 0.3rem;
+}
+
 button {
 	padding: 2rem 6rem;
 	border: none;
@@ -57,6 +63,10 @@ button {
 }
 
 button:hover {
+	background-color: #27394e;
+}
+
+button:focus {
 	background-color: #27394e;
 }
 
@@ -98,7 +108,7 @@ nav ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(rgb(0, 0, 0, 0.5), transparent), url('/img/landing-page.jpg');
+	background: linear-gradient(rgb(0, 0, 0, 0.8), transparent), url('/img/landing-page.jpg');
 	background-position: center;
 	background-size: cover;
 	color: white;
@@ -179,9 +189,6 @@ nav ul {
 }
 
 /* benefits section */
-
-#benefits {
-}
 
 .benefits-section {
 	min-height: 30vh;
@@ -267,6 +274,7 @@ nav ul {
 .form-wrapper input {
 	padding: 1rem 3rem;
 	width: 60%;
+	transition: all 500ms ease-in-out;
 }
 
 .form-wrapper button {
